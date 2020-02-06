@@ -60,7 +60,7 @@ def send_welcome(message):
 """)
     bot.register_next_step_handler(message, homework)
 
-# homework funcrion is used for getting homework by using subjects's id and the date. Get the subject's id from the www.dnevnik.ru.
+# homework function is used for getting homework by using subjects's id and the date. Get the subject's id from the www.dnevnik.ru.
 # Then you can you use your own subjects's name for the request in send_welcome function.
 
 def homework(message):
@@ -167,7 +167,3 @@ def webhook():
     # bot.remove_webhook()
     # bot.set_webhook(url='https://your_website/' + TOKEN)
     # return "!", 200
-
-
-# The original code for the web app is from example - https://github.com/eternnoir/pyTelegramBotAPI/blob/master/examples/webhook_examples/webhook_flask_heroku_echo.py
-
